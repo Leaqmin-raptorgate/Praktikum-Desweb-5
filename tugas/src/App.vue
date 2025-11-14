@@ -1,11 +1,15 @@
-<script setup></script>
+<script setup>
+  import {RouterView} from 'vue-router'
+  import Navbar from './components/Navbar.vue'
+  import Footer from './components/Footer.vue'
+</script>
 
 <template>
-  <h1 class="bg-brand-orange" >You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <Navbar />
 
-<style scoped></style>
+  <main>
+    <RouterView />
+  </main>
+
+  <Footer />
+</template>
